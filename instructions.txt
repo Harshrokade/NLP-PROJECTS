@@ -1,0 +1,31 @@
+Mock Interview Instructions for Parikshan.io Voice Module
+Welcome to your mock interview with Parikshan.io! Follow these instructions for a smooth experience.
+
+Before the Interview:
+
+Test Equipment: Ensure your microphone and speakers work and check your internet connection.
+Choose a Quiet Space: Find a distraction-free environment.
+Prepare Materials: Keep your resume and notes handy, but avoid switching windows during the interview.
+During the Interview:
+
+Stay Focused: Don’t switch applications to maintain the interview flow.
+Listen Carefully: Pay close attention to the questions.
+Respond Clearly: Speak clearly and at a moderate pace.
+Take Your Time: Gather your thoughts before answering.
+Engage with the Interviewer: Use polite language and express enthusiasm.
+After the Interview:
+
+Reflect on Your Performance: Identify areas for improvement.
+Be Open to Feedback: Use it as a growth opportunity.
+Practice: Schedule more mock interviews to refine your skills.
+Thank you for participating! Good luck!
+
+
+ # Read the instructions from instructions.txt
+        with open('instructions.txt', 'r') as file:
+            instructions = file.read()
+
+        # Generate the speech using gTTS and play the audio file
+        audio_file = 'instructions.mp3'
+        tts = gTTS(text=instructions, lang='en')
+        tts.save(audio_file)

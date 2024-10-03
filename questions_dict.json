@@ -1,0 +1,21 @@
+{
+    "What data type is used to store multiple items in a single variable in Python?": "Python",
+    "What is the most common library used for data manipulation in Python?": "Python",
+    "What is the keyword used to define a function in Python?": "Python",
+
+    "What type of learning involves labeled data in machine learning?": "Machine Learning",
+    "Which algorithm is commonly used for classification tasks in machine learning?": "Machine Learning",
+    "What is the term for overfitting a machine learning model to training data?": "Machine Learning",
+
+    "What is the full form of CSV in data science?": "Data Science",
+    "Which statistical measure indicates the average value of a dataset?": "Data Science",
+    "What does 'EDA' stand for in data science?": "Data Science",
+
+    "What Python library is used for numerical computing and handling arrays?": "Python",
+    "Which machine learning algorithm is based on decision trees and ensemble learning?": "Machine Learning",
+    "What is the term for dividing a dataset into training and testing sets?": "Data Science",
+
+    "What method is used to visualize data in Python?": "Python",
+    "What process involves reducing the dimensionality of data in machine learning?": "Machine Learning",
+    "What is the purpose of a confusion matrix in machine learning?": "Machine Learning"
+}
