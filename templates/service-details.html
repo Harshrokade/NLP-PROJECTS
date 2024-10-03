@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Parikshan.io</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Jost&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-  auto">
+        <h1 class="sitename">Parikshan.io</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="#about">Get Started</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+        <h1>Resume Analyzer</h1>
+      </div>
+    </div>
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+      <div class="container">
+
+        <!-- Upload Resume Form -->
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <h2>Upload Your Resume</h2>
+            <div class="upload-form text-center">
+              <input type="file" id="resume" name="resume" accept=".pdf" class="form-control mb-3" />
+              <button class="btn btn-primary" id="uploadButton">Upload and Analyze</button>
+            </div>
+          </div>
+
+          <!-- Display the extracted data -->
+          <div class="col-lg-12" id="results" style="display: none;">
+            <div class="card">
+              <div class="card-body">
+                <h3>Extracted Information:</h3>
+                <p><strong>Name:</strong> <span id="name"></span></p>
+                <p><strong>Contact Number:</strong> <span id="contact"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Skills:</strong> <span id="skills"></span></p>
+                <p><strong>Suggested Job Roles:</strong> <span id="jobRoles"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button to take a test for review -->
+          <button id="takeTestButton" class="btn btn-warning" style="display: none;">Take a Test for Review</button>
+
+
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <h4>About Parikshan.io</h4>
+          <p>Providing intelligent interview preparation tools to help candidates succeed.</p>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Follow us on social media for the latest updates and job tips.</p>
+          <div class="social-links d-flex">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Resume Upload and Parsing Script -->
+  <script>
+    // Handle the resume upload and display extracted information
+    document.getElementById('uploadButton').addEventListener('click', function () {
+      const fileInput = document.getElementById('resume');
+      const file = fileInput.files[0];
+  
+      if (!file) {
+        alert('Please upload a resume first.');
+        return;
+      }
+  
+      const formData = new FormData();
+      formData.append('file', file);
+  
+      fetch('/upload', {
+        method: 'POST',
+        body: formData,
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            alert('Error: ' + data.error);
+          } else {
+            // Display extracted data
+            document.getElementById('name').textContent = data.Name;
+            document.getElementById('contact').textContent = data['Contact Number'];
+            document.getElementById('email').textContent = data.Email;
+            document.getElementById('skills').textContent = data.Skills.join(', ');
+            document.getElementById('jobRoles').textContent = data['Suggested Job Roles'].join(', ');
+            document.getElementById('results').style.display = 'block';
+  
+            // Show the "Take a Test for Review" button after data is displayed
+            document.getElementById('takeTestButton').style.display = 'inline-block';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    });
+  
+     // Handle the click event to redirect to the quiz page
+document.getElementById('takeTestButton').addEventListener('click', function () {
+    window.location.href = '/quiz';  // Redirect to the Flask route for quiz.html
+});
+
+
+
+  </script>
+  
+
+</body>
+
+</html>

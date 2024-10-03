@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Optional: Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+        }
+        .quiz-box {
+            margin: 20px 0;
+        }
+        .quiz-box p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .wrong-answer-box {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Python Quiz</h1>
+        <div class="quiz-box">
+            <p id="questionBox">Loading Question...</p>
+            <div>
+                <input type="radio" name="answer" value="a" id="a"><label for="a"></label><br>
+                <input type="radio" name="answer" value="b" id="b"><label for="b"></label><br>
+                <input type="radio" name="answer" value="c" id="c"><label for="c"></label><br>
+                <input type="radio" name="answer" value="d" id="d"><label for="d"></label>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="results" style="display: none;">
+            <h3>Your Results:</h3>
+            <div id="wrongAnswers"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script> <!-- Link to your main.js file -->
+</body>
+</html>
